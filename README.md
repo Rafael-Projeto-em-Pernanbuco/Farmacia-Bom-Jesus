@@ -41,6 +41,58 @@
             padding: 20px;
         }
 
+.social-buttons a {
+      margin: 10px;
+      text-decoration: none;
+      font-size: 24px;
+      color: white;
+    }
+
+    .email-form input, .email-form button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+
+    .chat-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #b30059;
+      padding: 15px;
+      border-radius: 10px;
+      width: 300px;
+    }
+
+    .chat-box textarea {
+      width: 100%;
+      height: 60px;
+      resize: none;
+    }
+
+    .chat-box button {
+      margin-top: 5px;
+      width: 100%;
+      padding: 8px;
+    }
+
+    .announcement {
+      background-color: #ff69b4;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      margin-top: 20px;
+    }
+
+    .audio-recorder {
+      margin-top: 10px;
+    }
+
         iframe {
             width: 100%;
             height: 400px;
@@ -90,13 +142,8 @@
 
     <div class="container" id="contato">
         <h2>Fale Conosco</h2>
-        <p>Telefone: (xx) xxxx-xxxx</p>
+        <p>Telefone: (87)9 9939-1597</p>
         <p>Email: atendimento@farmaciabomjesus.com.br</p>
-    </div>
-
-    <div class="container" id="configuracoes">
-        <h2>Configurações</h2>
-        <p>Aqui você pode configurar preferências (em desenvolvimento).</p>
     </div>
 
     <footer>
