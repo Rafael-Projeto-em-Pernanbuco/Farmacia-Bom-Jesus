@@ -159,6 +159,24 @@
       <a href="https://telegram.me" target="_blank">✈️ Telegram</a>
     </div>
 
+<!-- Cadastro de E-mail -->
+    <div class="email-form">
+      <h2>Cadastre seu E-mail</h2>
+      <input type="email" placeholder="Seu e-mail">
+      <button>Enviar</button>
+    </div>
+
+    <!-- Anúncio -->
+    <div class="announcement">
+      <h2>Preços de Medicamentos</h2>
+      <ul>
+        <li> Temos Suplementos - </li>
+        <li> Vitamina B e C - </li>
+        <li> Temos Creme Dental Sorriso, Colgate, e Fraldas, Shampoos, e muito mais para nossos clientes com a maior dedicação  - </li>
+        <li> Temos Pacetanol, Dipirona para aliviar dores - </li>
+      </ul>
+    </div>
+
     <footer>
         <p>&copy; 2025 Farmácia Bom Jesus - Todos os direitos reservados.</p>
     </footer>
