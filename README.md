@@ -177,6 +177,19 @@
       </ul>
     </div>
 
+<!-- Chat de Atendimento com Gravador -->
+  <div class="chat-box">
+    <h3>Atendimento Online</h3>
+    <textarea placeholder="Digite sua mensagem..."></textarea>
+    <button>Enviar</button>
+
+    <!-- Gravador de Áudio -->
+    <div class="audio-recorder">
+      <button onclick="startRecording()">🎙️ Gravar Áudio</button>
+      <audio id="audioPlayer" controls style="display:none;"></audio>
+    </div>
+  </div>
+
     <footer>
         <p>&copy; 2025 Farmácia Bom Jesus - Todos os direitos reservados.</p>
     </footer>
