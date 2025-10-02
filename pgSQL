@@ -1,0 +1,31 @@
+-- banco.sql
+
+CREATE TABLE clientes (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    telefone VARCHAR(20),
+    endereco TEXT
+);
+
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    descricao TEXT,
+    preco DECIMAL(10,2),
+    estoque INT
+);
+
+CREATE TABLE pedidos (
+    id SERIAL PRIMARY KEY,
+    cliente_id INT REFERENCES clientes(id),
+    data_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE itens_pedido (
+    id SERIAL PRIMARY KEY,
+    pedido_id INT REFERENCES pedidos(id),
+    produto_id INT REFERENCES produtos(id),
+    quantidade INT,
+    preco_unitario DECIMAL(10,2)
+);
