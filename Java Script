@@ -1,0 +1,55 @@
+// script.js
+
+// Lista de produtos simulada
+const produtos = [
+    { id: 1, nome: "Dipirona", preco: 5.00 },
+    { id: 2, nome: "Paracetamol", preco: 6.50 },
+    { id: 3, nome: "Ibuprofeno", preco: 8.75 },
+];
+
+function renderizarProdutos() {
+    const lista = document.getElementById("lista-produtos");
+    lista.innerHTML = "";
+
+    produtos.forEach(produto => {
+        const item = document.createElement("div");
+        item.className = "product";
+        item.innerHTML = `
+            <h3>${produto.nome}</h3>
+            <p>Preço: R$ ${produto.preco.toFixed(2)}</p>
+            <button onclick="adicionarAoCarrinho(${produto.id})">Adicionar ao carrinho</button>
+        `;
+        lista.appendChild(item);
+    });
+}
+
+const carrinho = [];
+
+function adicionarAoCarrinho(id) {
+    const produto = produtos.find(p => p.id === id);
+    carrinho.push(produto);
+    alert(`${produto.nome} foi adicionado ao carrinho!`);
+}
+
+function buscarProduto() {
+    const termo = document.getElementById("busca").value.toLowerCase();
+    const resultados = produtos.filter(p => p.nome.toLowerCase().includes(termo));
+
+    const lista = document.getElementById("lista-produtos");
+    lista.innerHTML = "";
+
+    resultados.forEach(produto => {
+        const item = document.createElement("div");
+        item.className = "product";
+        item.innerHTML = `
+            <h3>${produto.nome}</h3>
+            <p>Preço: R$ ${produto.preco.toFixed(2)}</p>
+            <button onclick="adicionarAoCarrinho(${produto.id})">Adicionar ao carrinho</button>
+        `;
+        lista.appendChild(item);
+    });
+}
+
+window.onload = () => {
+    renderizarProdutos();
+};
