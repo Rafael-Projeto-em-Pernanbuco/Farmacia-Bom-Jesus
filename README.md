@@ -119,6 +119,18 @@
         <p>Rua Padre Medeiros N°02 - Centro, Exu - PE</p>
     </header>
 
+  <!-- Redes Sociais -->
+    <div class="social-buttons">
+      <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+      <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+      <a href="https://wa.me/5587998205648" target="_blank">📱 WhatsApp</a>
+      <a href="https://tiktok.com" target="_blank">🎵 TikTok</a>
+      <a href="https://kwai.com" target="_blank">📷 Kwai</a>
+      <a href="https://youtube.com" target="_blank">📺 YouTube</a>
+      <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+      <a href="https://telegram.me" target="_blank">✈️ Telegram</a>
+    </div>
+
     <div id="google_translate_element"></div>
 
     <nav>
