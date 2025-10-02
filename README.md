@@ -146,11 +146,12 @@
         <p>Email: atendimento@farmaciabomjesus.com.br</p>
     </div>
 
+<div class="container">
 <!-- Redes Sociais -->
     <div class="social-buttons">
       <a href="https://facebook.com" target="_blank">📘 Facebook</a>
       <a href="https://instagram.com" target="_blank">📸 Instagram</a>
-      <a href="https://wa.me/87999391597" target="_blank">📱 WhatsApp</a>
+      <a href="https://wa.me/5587999391597" target="_blank">📱 WhatsApp</a>
       <a href="https://tiktok.com" target="_blank">🎵 TikTok</a>
       <a href="https://kwai.com" target="_blank">📷 Kwai</a>
       <a href="https://youtube.com" target="_blank">📺 YouTube</a>
