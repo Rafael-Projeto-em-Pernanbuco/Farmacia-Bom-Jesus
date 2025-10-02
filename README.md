@@ -214,6 +214,37 @@
         s0.parentNode.insertBefore(s1,s0);
     })();
     </script>
+
+<!-- Gravador de Áudio -->
+  <script>
+    let mediaRecorder;
+    let audioChunks = [];
+
+    async function startRecording() {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      mediaRecorder = new MediaRecorder(stream);
+
+      mediaRecorder.start();
+
+      mediaRecorder.ondataavailable = function(e) {
+        audioChunks.push(e.data);
+      };
+
+      mediaRecorder.onstop = function() {
+        const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+        const audioUrl = URL.createObjectURL(audioBlob);
+        const audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.src = audioUrl;
+        audioPlayer.style.display = 'block';
+        audioPlayer.play();
+        audioChunks = [];
+      };
+
+      setTimeout(() => {
+        mediaRecorder.stop();
+      }, 5000); // Grava por 5 segundos
+    }
+  </script>
     
 <script src="script.js"></script>
 
