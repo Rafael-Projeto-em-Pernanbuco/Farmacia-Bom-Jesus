@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farmácia Bom Jesus</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+    <h1>Farmácia Bom Jesus</h1>
+    <p>Rua Padre Medeiros N°02 - Centro, Exu - PE</p>
+  </header>
+
+  <div id="google_translate_element"></div>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#contato">Contato</a>
+    <a href="#configuracoes">Configurações</a>
+  </nav>
+
+  <div class="container" id="inicio">
+    <h2>Bem-vindo à Farmácia Bom Jesus!</h2>
+    <p>Estamos prontos para cuidar da sua saúde com responsabilidade, carinho e os melhores preços.</p>
+  </div>
+
+  <div class="container" id="localizacao">
+    <h2>Localização</h2>
+    <iframe src="https://www.google.com/maps?q=Rua+Padre+Medeiros,+2,+Exu,+PE&output=embed"></iframe>
+  </div>
+
+  <div class="container" id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Telefone: (87)9 9939-1597</p>
+    <p>Email: atendimento@farmaciabomjesus.com.br</p>
+  </div>
+
+  <div class="container">
+    <div class="social-buttons">
+      <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+      <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+      <a href="https://wa.me/5587999391597" target="_blank">📱 WhatsApp</a>
+      <a href="https://tiktok.com" target="_blank">🎵 TikTok</a>
+      <a href="https://kwai.com" target="_blank">📷 Kwai</a>
+      <a href="https://youtube.com" target="_blank">📺 YouTube</a>
+      <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+      <a href="https://telegram.me" target="_blank">✈️ Telegram</a>
+    </div>
+
+    <div class="email-form">
+      <h2>Cadastre seu E-mail</h2>
+      <input type="email" id="email" placeholder="Seu e-mail" required />
+      <button onclick="enviarEmail()">Enviar</button>
+      <p id="emailStatus"></p>
+    </div>
+
+    <div class="announcement">
+      <h2>Preços de Medicamentos</h2>
+      <ul>
+        <li>Temos Suplementos</li>
